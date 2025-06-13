@@ -1,3 +1,3 @@
 # YelpCamp_app
-#Creating a camp app. My first big app. 
-#The project is part of the course completion process for the Web Development course by Colt Steele in Udemy
+#Creating Yelpcamp app. 
+#Using Node.js and express to create an app with mongoose as the database
