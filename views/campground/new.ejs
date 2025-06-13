@@ -1,0 +1,52 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="row">
+    <h2 class="text-center">New campground</h2>
+    <div class="col-6 offset-3" >
+        <form action="/campgrounds" method="POST" novalidate class="validated-form">
+            <div>
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="campground[title]" required>
+                    <div class="valid-feedback">
+                        looks ok
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="location">Location</label>
+                    <input class="form-control" type="text" id="location" name="campground[location]" required>
+                    <div class="valid-feedback">
+                        looks ok
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="image">Image url</label>
+                    <input class="form-control" id="image" type="text" name="campground[image]" required>
+                    <div class="valid-feedback">
+                        looks ok
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" aria-label="" name="campground[price]" required>
+                    <span class="input-group-text">.00</span>
+                    <div class="valid-feedback">
+                        looks ok
+                    </div>
+                </div>
+                <div class="mb-3">
+                <label class=form-label for="description">Description</label>
+                <textarea class="form-control" type="text" name="campground[description]" id="description"></textarea>
+                </div>
+            </div>
+            <div class="mb-3">
+            <button class="btn btn-primary">Add camp</button>
+            </div>
+        </form>
+         <div>
+        <a href="/campgrounds">All campgrounds</a> 
+        </div>
+    </div>
+</div>
+
+    
